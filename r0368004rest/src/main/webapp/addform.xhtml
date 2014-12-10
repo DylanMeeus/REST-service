@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+
+    Copyright (c) 2014 Oracle and/or its affiliates. All rights reserved.
+
+    You may not modify, use, reproduce, or distribute this software except in
+    compliance with  the terms of the License at:
+    http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+	  java.sun.com/jsf/facelets
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+      
+<html lang="en"
+	  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+	 
+
+    <h:head>
+        <title>r0368004_addForm</title>
+    </h:head>
+    <h:body>
+    <p>
+   	<a href="overview.xhtml">Back to overview</a>
+   	</p>
+    	<h:form>
+    	<p> Add book</p>
+    	
+    	<h:inputText id="title" value="#{formBean.title}"></h:inputText>
+    	<h:message class="help-block" for="title"></h:message>
+    	<h:commandButton action="#{formBean.createBook}" value="Save"/>
+    	</h:form>
+    	
+   
+    </h:body>
+</html>
